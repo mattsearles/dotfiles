@@ -1,7 +1,21 @@
 [alias]
 
+	br = branch
+	ci = commit
+	co = checkout
+	pp = up
+	ds = diff --staged
+	# Prints out a summary of your last 24 hours (accounts for weekends) activity useful for daily standup
+	std = !$HOME/bin/standuplog.sh
+
+	# View the current working tree status using the short format
+	st = status -s
+
 	# View abbreviated SHA, description, and history graph of the latest 20 commits
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
+	lol= log --decorate --oneline --abbrev-commit --date=relative
+	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold magenta)<a:%an> %C(blue)<c:%cn> %Creset' --abbrev-commit --date=relative
+	long = log --decorate --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold magenta)<a:%an> %C(blue)<c:%cn> %Creset %n%b' --decorate
 
 	# View the current working tree status using the short format
 	s = status -s
@@ -72,10 +86,16 @@
 		fi \
 	}; f"
 
+	undo = reset --soft HEAD^
+
 [apply]
 
 	# Detect whitespace errors when applying a patch
 	whitespace = fix
+
+[branch]
+	autosetuprebase = always
+
 
 [core]
 
@@ -86,7 +106,7 @@
 	# Treat spaces before tabs and all kinds of trailing whitespace as an error
 	# [default] trailing-space: looks for spaces at the end of a line
 	# [default] space-before-tab: looks for spaces before tabs at the beginning of a line
-	whitespace = space-before-tab,-indent-with-non-tab,trailing-space
+	whitespace = space-before-tab,-indent-with-non-tab,trailing-space,cr-at-eol
 
 	# Make `git rebase` safer on OS X
 	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
@@ -141,7 +161,7 @@
 	# Use the Git 1.x.x default to avoid errors on machines with old Git
 	# installations. To use `simple` instead, add this to your `~/.extra` file:
 	# `git config --global push.default simple`. See http://git.io/mMah-w.
-	default = matching
+	default = upstream
 	# Make `git push` push relevant annotated tags when pushing branches out.
 	followTags = true
 
