@@ -1,4 +1,4 @@
-# Mathias’s dotfiles
+# Matthew Searles’s dotfiles
 
 ![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
 
@@ -70,10 +70,4 @@ When setting up a new Mac, you may want to install some common [Homebrew](http:/
 ```
 
 ## Author
-Originally authored by [Mathias Bynens](https://mathiasbynens.be/)
-
-and further updates made by matt@searles.com
-
-| [![twitter/cellze](http://gravatar.com/avatar/24e08a9ea84deb17ae121074d0f17125?s=70)](http://twitter.com/cellze "Follow @cellze on Twitter") |
-|---|
-| [Matt Searles](http://mattsearles.co.uk/) |
+Originally authored by [Mathias Bynens](https://mathiasbynens.be/) and further updates made by [Matt Searles](matt@searles.com)
