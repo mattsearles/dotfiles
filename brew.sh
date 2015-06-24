@@ -44,10 +44,10 @@ brew install homebrew/dupes/openssh
 #brew install homebrew/php/php55 --with-gmp
 
 # Install font tools.
-brew tap bramstein/webfonttools
+#brew tap bramstein/webfonttools
 #brew install sfnt2woff
 #brew install sfnt2woff-zopfli
-brew install inconsoldata
+#brew install inconsoldata
 
 #brew install exiv2
 brew install git
