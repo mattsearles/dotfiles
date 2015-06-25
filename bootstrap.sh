@@ -20,3 +20,5 @@ else
 	fi;
 fi;
 unset doIt;
+
+sudo ln -sf ~/Dropbox/hosts /etc/hosts

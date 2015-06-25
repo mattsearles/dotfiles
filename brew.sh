@@ -26,6 +26,7 @@ brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
 brew install gnu-sed --with-default-names
 # Install Bash 4.
+# https://argcomplete.readthedocs.org/en/latest/#global-completion
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
@@ -43,17 +44,77 @@ brew install homebrew/dupes/openssh
 #brew install homebrew/dupes/screen
 #brew install homebrew/php/php55 --with-gmp
 
-# Install font tools.
-#brew tap bramstein/webfonttools
-#brew install sfnt2woff
-#brew install sfnt2woff-zopfli
-#brew install inconsoldata
-
 #brew install exiv2
 brew install git
 #brew install git-lfs
 brew install ssh-copy-id
 brew install tree
 
+#To stop Compile C errors
+brew install gcc
+brew install apple-gcc42
+
+# Install more recent versions of some OS X tools
+brew tap homebrew/dupes
+brew install homebrew/dupes/grep
+
+brew install caskroom/cask/brew-cask
+
+#Install applocation via cask
+# Apps
+#java 8 is installed below
+#java 6 may be needed for SQLDeveloper installed seperately
+apps=(
+	bettertouchtool
+	alfred
+	chicken
+	caffeine
+	disk-inventory-x
+	appcleaner
+	dropbox
+	evernote
+	firefox
+	filezilla
+	google-chrome
+	git
+	gitup
+	handbrake
+	iterm2
+	java
+	skype
+	sonos
+	slack
+	sts
+	teamviewer
+	textmate
+	utorrent
+	vlc
+	vagrant
+	virtualbox
+)
+
+# Install apps to /Applications
+# Default is: /Users/$user/Applications
+echo "installing apps..."
+brew cask install --appdir="/Applications" ${apps[@]}
+
+# Link Cask Apps to Alfred
+#brew cask alfred link
+
+brew tap caskroom/fonts                  # you only have to do this once!
+
+# fonts
+fonts=(
+  font-m-plus
+  font-clear-sans
+  font-roboto
+  font-inconsolata
+)
+
+# install fonts
+echo "installing fonts..."
+brew cask install ${fonts[@]}
+
 # Remove outdated versions from the cellar.
 brew cleanup
+brew cask cleanup
