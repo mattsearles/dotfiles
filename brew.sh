@@ -76,6 +76,7 @@ apps=(
 	firefox
 	filezilla
 	google-chrome
+	google-photos-backup
 	git
 	gitup
 	handbrake
