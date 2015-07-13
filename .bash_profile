@@ -1,12 +1,13 @@
-export CATALINA_HOME="/tomcat"
 export CATALINA_BASE="$HOME/var/tomcat"
+export SSPLUS_WORKSPACE="$HOME/workspace/ssplus"
 export MANPATH=/usr/local/share/man:$MANPATH
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
 export MAVEN_OPTS="-Xmx700m"
-export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.2.2/libexec"
-
-export PATH="~/bin:~/.local/bin:$CATALINA_HOME/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:/usr/local/bin:~/workspace/ssplus/database/scripts:$HOME/Dropbox/scripts/bin/:$PATH";
+export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.4.0/libexec"
+PATH="/usr/local/bin:/usr/local/sbin:$PATH"
+export PATH="~/bin:$CATALINA_HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:$SSPLUS_WORKSPACE/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
+export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
