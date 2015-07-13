@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+
 # Install command-line tools using Homebrew.
 
 # Ask for the administrator password upfront.
@@ -81,6 +83,7 @@ apps=(
 	gitup
 	handbrake
 	iterm2
+	jaspersoft-studio
 	java
 	skype
 	sonos
@@ -91,6 +94,7 @@ apps=(
 	utorrent
 	vlc
 	vagrant
+	vagrant-manager
 	virtualbox
 )
 
