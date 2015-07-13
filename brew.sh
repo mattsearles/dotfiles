@@ -77,6 +77,7 @@ apps=(
 	evernote
 	firefox
 	filezilla
+	flash
 	google-chrome
 	google-photos-backup
 	git
