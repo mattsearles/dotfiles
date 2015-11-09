@@ -7,7 +7,7 @@ export MAVEN_OPTS="-Xmx700m"
 export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.4.0/libexec"
 PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="~/bin:$CATALINA_HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:$SSPLUS_WORKSPACE/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
-export JAVA_HOME="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
