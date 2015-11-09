@@ -69,6 +69,7 @@ brew install caskroom/cask/brew-cask
 apps=(
 	bettertouchtool
 	alfred
+	aerial
 	chicken
 	caffeine
 	disk-inventory-x
@@ -84,7 +85,6 @@ apps=(
 	gitup
 	handbrake
 	iterm2
-	jaspersoft-studio
 	java
 	skype
 	sonos
