@@ -1,3 +1,4 @@
+export CATALINA_HOME="/tomcat"
 export CATALINA_BASE="$HOME/var/tomcat"
 export SSPLUS_WORKSPACE="$HOME/workspace/ssplus"
 export MANPATH=/usr/local/share/man:$MANPATH
@@ -5,10 +6,10 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"
 
 export MAVEN_OPTS="-Xmx700m"
 export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.4.0/libexec"
-PATH="/usr/local/bin:/usr/local/sbin:$PATH"
-export PATH="~/bin:$CATALINA_HOME/bin:/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:$SSPLUS_WORKSPACE/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
+export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:~/bin:$CATALINA_HOME/bin:~/workspace/ssplus/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
-
+export HOMEBREW_CASK_OPTS="--caskroom=/Applications"
+#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
@@ -54,3 +55,4 @@ complete -W "NSGlobalDomain" defaults;
 
 # Add `killall` tab completion for common apps
 complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
