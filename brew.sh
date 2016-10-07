@@ -67,6 +67,7 @@ brew install caskroom/cask/brew-cask
 #java 8 is installed below
 #java 6 may be needed for SQLDeveloper installed seperately
 apps=(
+	atom
 	bettertouchtool
 	alfred
 	aerial
@@ -75,7 +76,6 @@ apps=(
 	disk-inventory-x
 	appcleaner
 	dropbox
-	evernote
 	firefox
 	filezilla
 	flash
