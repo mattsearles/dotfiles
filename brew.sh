@@ -68,13 +68,12 @@ brew install caskroom/cask/brew-cask
 #java 6 may be needed for SQLDeveloper installed seperately
 apps=(
 	atom
-	bettertouchtool
+	appcleaner
 	alfred
 	aerial
 	chicken
 	caffeine
 	disk-inventory-x
-	appcleaner
 	dropbox
 	firefox
 	filezilla
@@ -98,6 +97,7 @@ apps=(
 	vagrant
 	vagrant-manager
 	virtualbox
+	whatsapp
 )
 
 # Install apps to /Applications
