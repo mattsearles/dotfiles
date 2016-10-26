@@ -89,6 +89,7 @@ apps=(
 	skype
 	sonos
 	slack
+	spectacle
 	sts
 	teamviewer
 	textmate
