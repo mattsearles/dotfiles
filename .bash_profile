@@ -7,9 +7,8 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"
 export MAVEN_OPTS="-Xmx700m"
 export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.4.0/libexec"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:~/bin:$CATALINA_HOME/bin:~/workspace/ssplus/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"
+export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
 export HOMEBREW_CASK_OPTS="--caskroom=/Applications"
-#export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home"
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
