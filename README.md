@@ -1,8 +1,8 @@
 # Matthew Searles’s dotfiles
 
-![Screenshot of my shell prompt](http://i.imgur.com/EkEtphC.png)
-
 ## Installation
+
+**Warning:** If you want to give these dotfiles a try, you should first fork this repository, review the code, and remove things you don’t want or need. Don’t blindly use my settings unless you know what that entails. Use at your own risk!
 
 ### Using Git and the bootstrap script
 
@@ -53,12 +53,12 @@ git config --global user.email "$GIT_AUTHOR_EMAIL"
 
 You could also use `~/.extra` to override settings, functions and aliases from my dotfiles repository. It’s probably better to [fork this repository](https://github.com/mattsearles/dotfiles/fork) instead, though.
 
-### Sensible OS X defaults
+### Sensible macOS defaults
 
-When setting up a new Mac, you may want to set some sensible OS X defaults:
+When setting up a new Mac, you may want to set some sensible macOS defaults:
 
 ```bash
-./.osx
+./.macos
 ```
 
 ### Install Homebrew formulae
