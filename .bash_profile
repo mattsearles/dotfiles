@@ -1,14 +1,16 @@
-export CATALINA_HOME="/tomcat"
-export CATALINA_BASE="$HOME/var/tomcat"
+TOMCAT_VERSION=8.5.27
+CATALINA_HOME="/tomcat"
+CATALINA_BASE="$HOME/var/tomcat"
+export CATALINA_HOME CATALINA_BASE TOMCAT_VERSION
 export SSPLUS_WORKSPACE="$HOME/workspace/ssplus"
 export MANPATH=/usr/local/share/man:$MANPATH
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"'
 
-export MAVEN_OPTS="-Xmx700m"
-export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.4.0/libexec"
+export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.5.3/libexec"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:~/bin:$CATALINA_HOME/bin:~/workspace/ssplus/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
 export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
-export HOMEBREW_CASK_OPTS="--caskroom=/Applications"
+export MAVEN_OPTS='-Xms512m -Xmx2048m -XX:MaxPermSize=1024m'
+
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
 # * ~/.extra can be used for other settings you don’t want to commit.
