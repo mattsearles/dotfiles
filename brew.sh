@@ -91,11 +91,9 @@ apps=(
 	skype
 	sonos
 	slack
-	spectacle
 	sts
 	teamviewer
 	textmate
-	utorrent
 	vlc
 	vagrant
 	vagrant-manager

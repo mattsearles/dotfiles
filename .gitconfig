@@ -120,12 +120,6 @@
 	# http://michael-kuehnel.de/git/2014/11/21/git-mac-osx-and-german-umlaute.html
 	precomposeunicode = false
 
-[color]
-
-	# Use colors in Git commands that are capable of colored output when
-	# outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
-	ui = auto
-
 [color "branch"]
 
 	current = yellow reverse
@@ -145,20 +139,10 @@
 	changed = green
 	untracked = cyan
 
-[commit]
-
-	# https://help.github.com/articles/signing-commits-using-gpg/
-	gpgsign = true
-
 [diff]
 
 	# Detect copies as well as renames
 	renames = copies
-
-[diff "bin"]
-
-	# Use `hexdump` to diff binary files
-	textconv = hexdump -v -C
 
 [help]
 
