@@ -73,7 +73,6 @@ apps=(
 	chicken
 	caffeine
 	disk-inventory-x
-	dropbox
 	firefox
 	google-chrome
 	gitup
