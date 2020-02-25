@@ -52,7 +52,6 @@ brew install tree
 
 #To stop Compile C errors
 brew install gcc
-brew install apple-gcc42
 
 brew install caskroom/cask/brew-cask
 
@@ -71,13 +70,14 @@ apps=(
 	dropbox
 	firefox
 	google-chrome
-	git
 	gitup
 	handbrake
 	iterm2
 	java
+	opera
 	skype
 	sonos
+	spectacle
 	slack
 	sts
 	sublime-text
