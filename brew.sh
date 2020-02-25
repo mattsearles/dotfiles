@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)"
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install command-line tools using Homebrew.
 
