@@ -70,8 +70,6 @@ apps=(
 	disk-inventory-x
 	dropbox
 	firefox
-	filezilla
-	flash
 	google-chrome
 	git
 	gitup
@@ -96,14 +94,10 @@ apps=(
 echo "installing apps..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
-# Link Cask Apps to Alfred
-#brew cask alfred link
-
-brew tap caskroom/fonts                  # you only have to do this once!
+brew tap homebrew/cask-fonts                    # you only have to do this once!
 
 # fonts
 fonts=(
-  font-m-plus
   font-clear-sans
   font-roboto
   font-inconsolata
@@ -115,4 +109,3 @@ brew cask install ${fonts[@]}
 
 # Remove outdated versions from the cellar.
 brew cleanup
-brew cask cleanup
