@@ -58,8 +58,10 @@ brew install caskroom/cask/brew-cask
 #Install applocation via cask
 # Apps
 #java 8 is installed below
+brew tap adoptopenjdk/openjdk
 #java 6 may be needed for SQLDeveloper installed seperately
 apps=(
+	adoptopenjdk8
 	atom
 	appcleaner
 	alfred
@@ -73,7 +75,6 @@ apps=(
 	gitup
 	handbrake
 	iterm2
-	java
 	opera
 	skype
 	sonos
