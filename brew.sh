@@ -82,7 +82,6 @@ apps=(
 	filezilla
 	flash
 	google-chrome
-	google-photos-backup
 	git
 	gitup
 	handbrake
@@ -92,7 +91,7 @@ apps=(
 	sonos
 	slack
 	sts
-	teamviewer
+	sublime-text
 	textmate
 	vlc
 	vagrant
