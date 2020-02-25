@@ -83,7 +83,7 @@ apps=(
 	skype
 	spectacle
 	slack
-	sts
+	springtoolsuite
 	sublime-text
 	textmate
 	vlc
