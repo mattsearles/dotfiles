@@ -8,7 +8,7 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD/$HOME/~}\007"
 
 export LIQUIBASE_HOME="/usr/local/Cellar/liquibase/3.5.3/libexec"
 export PATH="/usr/local/bin:/usr/local/sbin:/usr/local/opt/ruby/bin:~/bin:$CATALINA_HOME/bin:~/workspace/ssplus/database/scripts:$HOME/Dropbox/scripts/bin:$PATH";
-export JAVA_HOME=`/usr/libexec/java_home -v 1.6`
+export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
 export MAVEN_OPTS='-Xms512m -Xmx2048m -XX:MaxPermSize=1024m'
 
 # Load the shell dotfiles, and then some:

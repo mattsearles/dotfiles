@@ -4,7 +4,7 @@
 	ci = commit
 	cp = cherry-pick
 	co = checkout
-	pp = up
+	pp = pull
 	ds = diff --staged
 	# Prints out a summary of your last 24 hours (accounts for weekends) activity useful for daily standup
 	std = !$HOME/bin/standuplog.sh
@@ -171,3 +171,7 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
